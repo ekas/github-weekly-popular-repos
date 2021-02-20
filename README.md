@@ -2,7 +2,7 @@
 
 Project is build using the create-react-app cli and being deployed over [Zeit](https://zeit.co/)
 
-[Demo](https://eventcalendar-i4yshfylh.now.sh/) is also available
+[Demo](https://github-weekly-popular-repos.ekas.vercel.app/) is also available
 
 ## Project Build Instructions
 
@@ -40,12 +40,10 @@ This will run a local instance of the application `http://localhost:3000/`
 
 ## Project Screenshots
 
-![Img 2](https://github.com/ekas/react-apps/blob/master/EventCalendar-react/screenshots/calendar_screenshot_1.PNG)
+![Img 1](https://github.com/ekas/github-weekly-popular-repos/blob/main/screenshots/Screenshot_1.png)
 
-![Img 3](https://github.com/ekas/react-apps/blob/master/EventCalendar-react/screenshots/calendar_screenshot_2.PNG)
+![Img 2](https://github.com/ekas/github-weekly-popular-repos/blob/main/screenshots/Screenshot_2.png)
 
-![Img 4](https://github.com/ekas/react-apps/blob/master/EventCalendar-react/screenshots/calendar_screenshot_3.PNG)
-
-![Img 5](https://github.com/ekas/react-apps/blob/master/EventCalendar-react/screenshots/calendar_screenshot_4.PNG)
+![Img 3](https://github.com/ekas/github-weekly-popular-repos/blob/main/screenshots/Screenshot_3.png)
 
 ## Thank You
