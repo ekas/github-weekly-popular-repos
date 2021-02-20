@@ -32,10 +32,6 @@ const App = () => {
     );
   };
 
-  const filterData = async () => {
-    return await githubData.filter((item) => item.language != null);
-  };
-
   useEffect(() => {
     //Fetch data
     fetchGithubData()
@@ -45,7 +41,7 @@ const App = () => {
 
   useEffect(() => {
     //Get languages from Github Data
-    filterData().then((data) => setFilteredData(data));
+    setFilteredData(githubData.filter((item) => item.language != null));
   }, [githubData]);
 
   useEffect(() => {
@@ -59,7 +55,7 @@ const App = () => {
         }
       })
     );
-  }, [langFilter]);
+  }, [langFilter, githubData]);
 
   return (
     <div className="App">

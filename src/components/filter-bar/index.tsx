@@ -13,7 +13,7 @@ const FilterBar = ({ filteredData, setLanguageFilter }: FilterBarProps) => {
 
   useEffect(() => {
     const langErr: string[] = [];
-    filteredData.map((item, i) => {
+    filteredData.forEach((item, i) => {
       if (langErr.indexOf(item.language) === -1) {
         langErr.push(item.language);
       }
