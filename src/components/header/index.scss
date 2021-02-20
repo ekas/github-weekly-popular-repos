@@ -1,0 +1,13 @@
+@import "../../colors.scss";
+
+header {
+  color: $text;
+  text-align: center;
+  background-color: $secondary;
+}
+h2 {
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
