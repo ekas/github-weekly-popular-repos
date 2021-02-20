@@ -1,22 +1,32 @@
 import starImg from "../../assets/star.png";
+import { repoData } from "../../types/repoData";
+
 import "./index.scss";
 
-const FilterBar = () => (
+type CardProps = {
+  data: repoData;
+};
+
+const Card = ({
+  data: { name, description, language, html_url, stargazers_count },
+}: CardProps) => (
   <div className="card-outline">
     <div className="card">
       <div className="card-stars">
         <img src={starImg} alt="Stars" className="card-stars-img" />
-        100
+        {stargazers_count}
       </div>
-      <div className="card-header">
-        <p title="github-weekly-popular-repos">github-weekly-popular-repos</p>
+      <a href={html_url} className="card-link">
+        <div className="card-header">
+          <p title="github-weekly-popular-repos">{name}</p>
+        </div>
+      </a>
+      <div className="card-language">
+        {language === null ? "Other" : language}
       </div>
-      <div className="card-language">HTML</div>
-      <p className="card-description">
-        Shows a list Popular repos weekly Shows a list Popular repos weekly
-      </p>
+      <p className="card-description">{description}</p>
     </div>
   </div>
 );
 
-export default FilterBar;
+export default Card;
